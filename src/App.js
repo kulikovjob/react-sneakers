@@ -1,48 +1,29 @@
+import Card from "./components/Card";
+import Header from "./components/Header";
+import Drawer from "./components/Drawer";
 function App() {
     return (
     <div className="wrapper clear">
-        <header className="d-flex justify-between align-center p-40">
-        <div className="d-flex align-center">
-            <img width={40} height={40} src="/img/logo.png" alt="logo"/>
-            <div>
-                <h3 className="text-uppercase">React sneakers</h3>
-                <p className="opacity-5">Магазин найкращих кросівок</p>
-            </div>
-        </div>
-        <ul className="d-flex">
-            <li className="mr-30">
-                <img src="/img/cart.svg" alt="cart"/>
-                <span>1205 UAH</span>
-            </li>
-            <li>
-                <img src="/img/user.svg" alt="user"/>
-            </li>
-        </ul>
-        </header>
+        <Drawer/>
+        <Header/>
         <div className="content p-40">
-            <h1 className="mb-40">Всі кросівки</h1>
+            <div className="d-flex align-center mb-40 justify-between">
+                <h1>Всі кросівки</h1>
+                <div className="search-block d-flex">
+                    <img src="/img/search.svg" alt="Search"/>
+                    <input placeholder="Пошук..."/>
+                </div>
+            </div>
 
             <div className="d-flex">
-                <div className="card">
-                    <img width={133} height={112} src="/img/sneakers/1.jpg" alt="sneakers_1"/>
-                    <h5>Чоловічі Кросівки Nike Blazer Mid Suede</h5>
-                    <div className="d-flex justify-between align-center">
-                        <div className="d-flex flex-column">
-                            <span>Ціна:</span>
-                            <b>5 850 UAH</b>
-                        </div>
-                        <button className="button">
-                            <img width={11} height={11} src="/img/plus.svg" alt="plus"/>
-                        </button>
-                    </div>
-                </div>
+                <Card/>
                 <div className="card">
                     <img width={133} height={112} src="/img/sneakers/2.jpg" alt="sneakers_1"/>
-                    <h5>Чоловічі Кросівки Nike Blazer Mid Suede</h5>
+                    <h5>Чоловічі Кросівки Nike Air Max 270</h5>
                     <div className="d-flex justify-between align-center">
                         <div className="d-flex flex-column">
                             <span>Ціна:</span>
-                            <b>5 850 UAH</b>
+                            <b>6 440 UAH</b>
                         </div>
                         <button className="button">
                             <img width={11} height={11} src="/img/plus.svg" alt="plus"/>
@@ -51,11 +32,11 @@ function App() {
                 </div>
                 <div className="card">
                     <img width={133} height={112} src="/img/sneakers/3.jpg" alt="sneakers_1"/>
-                    <h5>Чоловічі Кросівки Nike Blazer Mid Suede</h5>
+                    <h5>Чоловічі Кросівки Nike Blazer Mid Sued</h5>
                     <div className="d-flex justify-between align-center">
                         <div className="d-flex flex-column">
                             <span>Ціна:</span>
-                            <b>5 850 UAH</b>
+                            <b>4 250 UAH</b>
                         </div>
                         <button className="button">
                             <img width={11} height={11} src="/img/plus.svg" alt="plus"/>
@@ -64,11 +45,11 @@ function App() {
                 </div>
                 <div className="card">
                     <img width={133} height={112} src="/img/sneakers/4.jpg" alt="sneakers_1"/>
-                    <h5>Чоловічі Кросівки Nike Blazer Mid Suede</h5>
+                    <h5>Кросівки Puma X Aka Boku Future Rider</h5>
                     <div className="d-flex justify-between align-center">
                         <div className="d-flex flex-column">
                             <span>Ціна:</span>
-                            <b>5 850 UAH</b>
+                            <b>8 850 UAH</b>
                         </div>
                         <button className="button">
                             <img width={11} height={11} src="/img/plus.svg" alt="plus"/>
